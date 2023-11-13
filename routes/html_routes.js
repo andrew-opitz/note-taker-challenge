@@ -6,7 +6,7 @@ Router.get('/notes', (req, res) => {
     res.sendFile(path.join(__dirname, '../public/notes.html'))
 })
 
-Router.get('/*', (req, res) => {
+Router.get('*', (req, res) => {
     res.sendFile(path.join(__dirname, '../public/index.html'))
 })
 
